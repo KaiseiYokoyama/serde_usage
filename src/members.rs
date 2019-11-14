@@ -2,7 +2,7 @@ use serde::{Serialize, Deserialize};
 
 /// members.json の内容すべて
 #[derive(Serialize,Deserialize,Debug)]
-pub struct Members(Vec<Cluster>);
+pub struct Members(pub Vec<Cluster>);
 
 /// 入部年度ごとのメンバーの集合
 #[derive(Serialize,Deserialize,Debug)]
